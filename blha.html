@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+
+<head>
+  <meta charset="UTF-8">
+  <style type="text/css">
+  .container { padding: 400px 200px; /* This gives our headings a bit of breathing room */ } 
+  .js-background-1 { background: transparent url(fondo.jpg) center 0 no-repeat; } 
+  .js-background-2 { background: transparent url(Wave.jpg) center 0 no-repeat; }
+  </style>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script type="text/javascript">
+
+    var $window = $(window); 
+    var velocity = 0.4; 
+
+    function update()
+    { 
+      var pos = $window.scrollTop(); 
+      $('.container').each(function() 
+        { 
+          var $element = $(this); 
+          var height = $element.height(); 
+          $(this).css('backgroundPosition', '50% ' + Math.round((height - pos) * velocity) + 'px'); 
+        }); 
+    }; 
+    $window.bind('scroll', update);
+    </script>
+</head>
+<body>
+  <div class="js-background-1 container"> 
+    <h2>The first box!</h2> 
+  </div> 
+  <div class="js-background-2 container"> 
+    <h2>The second box!</h2> 
+  </div>
+</body>
+
