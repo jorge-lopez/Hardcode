@@ -1,0 +1,45 @@
+#titulo{
+	min-height: 100px;
+	height: 100px;
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1920px;
+	position: fixed;
+	z-index: 100;
+}
+#home{
+	background: url(../Imagenes/Wave.jpg) 50% 0 repeat fixed;
+	min-height: 800px;
+	height: 800px;
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1920px;
+	position: relative;
+}
+
+#home article{
+	height: 458px;
+	position: absolute;
+	text-align: center;
+	top: 20px;
+	width: 100%;
+}
+
+
+#about{
+	background: url(../Imagenes/Desert.jpg) 50% 0 repeat fixed;
+	min-height: 800px;
+	height: 800px;
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1920px;
+	position: relative;
+}
+
+#about article{
+	height: 458px;
+	position: absolute;
+	text-align: center;
+	top:20px;
+	width: 100%;
+}
