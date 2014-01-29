@@ -1,0 +1,44 @@
+.title-page 
+{
+	font-family: 'Lato', sans-serif; 
+	font-weight: 300; 
+	font-size: 70px;
+}
+  .page-text 
+{
+	font-family: 'Lato', sans-serif; 
+	font-weight: 400;
+}
+  .text 
+{
+  	font-family: 'Lato', sans-serif; 
+  	font-weight: 300;
+}
+  .container 
+{ 
+	padding: 400px 200px; 
+	margin: -10px; /* This gives our headings a bit of breathing room */ 
+} 
+  .js-background-1 
+{ 
+	background:  url(../Imagenes/fondo.jpg) center 0 no-repeat fixed;
+} 
+  .js-background-2 
+{ 
+	background:  url(../Imagenes/Wave.jpg) center 0 no-repeat fixed; 
+}
+  .pinned-title
+{
+	z-index: 28; 
+	background-color: rgb(255, 254, 253); 
+	position: fixed; 
+	top: 0px; 
+	height: 90px;
+	border-style: none; 
+	border-color: transparent;
+	width: 1349px; 
+	margin-left: 0px; 
+	left: 0px; 
+	margin-right: -1349px; 
+	padding-right: 0px;
+}
