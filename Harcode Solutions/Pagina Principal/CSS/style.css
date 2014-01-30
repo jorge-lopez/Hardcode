@@ -1,14 +1,19 @@
+.font-titulo {
+	font-family: 'Lato', sans-serif; 
+	font-weight: 300; 
+	font-size: 70px;
+}
 #titulo{
-	min-height: 80px;
+	min-height: 70px;
 	top: 0px;
-	height: 80px;
+	height: 70px;
 	margin: 0 auto;
 	width: 100%;
 	max-width: 1920px;
 	position: fixed;
-
 	z-index: 100;
 	background-color: rgb(255,254,253);
+	
 }
 body{
 	margin:0;
@@ -21,8 +26,7 @@ body{
 	width: 100%;
 	max-width: 1920px;
 	position: relative;
-
-
+	top:50px;
 }
 
 #home article{
@@ -52,3 +56,20 @@ body{
 	width: 100%;
 }
 
+#crew{
+	background: url(../Imagenes/fondo.jpg) 50% 0 no-repeat fixed;
+	min-height: 800px;
+	height: 800px;
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1920px;
+	position: relative;
+}
+
+#crew article{
+	height: 458px;
+	position: absolute;
+	text-align: center;
+	top:20px;
+	width: 100%;
+}
