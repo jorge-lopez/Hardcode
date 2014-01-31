@@ -50,6 +50,8 @@ body{
 }
 ul{
 	margin-top: -50px;
+	margin-left: auto;
+	margin-right: 50px;
 }
 .nav ul{
 
@@ -61,7 +63,8 @@ ul{
 	font-weight: 400; 
 	font-size: 20px;
 	display: inline;
-	padding: 5px 20px 5px 50px;
+	padding: -10px 20px 5px 50px;
+	margin-left: 20px;
 }
 .nav a{
 	text-decoration: none;
