@@ -1,44 +1,93 @@
-.title-page 
-{
+.font-titulo {
 	font-family: 'Lato', sans-serif; 
 	font-weight: 300; 
 	font-size: 70px;
 }
-  .page-text 
+
+  .text-title 
 {
 	font-family: 'Lato', sans-serif; 
 	font-weight: 400;
+	text-align: center;
+	color: white;
 }
   .text 
 {
   	font-family: 'Lato', sans-serif; 
   	font-weight: 300;
+  	color: white;
 }
-  .container 
-{ 
-	padding: 400px 200px; 
-	margin: -10px; /* This gives our headings a bit of breathing room */ 
-} 
-  .js-background-1 
-{ 
-	background:  url(../Imagenes/fondo.jpg) center 0 no-repeat fixed;
-} 
-  .js-background-2 
-{ 
-	background:  url(../Imagenes/Wave.jpg) center 0 no-repeat fixed; 
-}
-  .pinned-title
+
+
+#titulo
 {
-	z-index: 28; 
-	background-color: rgb(255, 254, 253); 
-	position: fixed; 
-	top: 0px; 
-	height: 90px;
-	border-style: none; 
-	border-color: transparent;
-	width: 1349px; 
-	margin-left: 0px; 
-	left: 0px; 
-	margin-right: -1349px; 
-	padding-right: 0px;
+	min-height: 115px;
+	top: 0px;
+	height: 115px;
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1920px;
+	position: fixed;
+	z-index: 100;
+	background-color: rgb(255,254,253);
+	
 }
+body{
+	margin:0;
+	padding:0;
+}
+ul{
+	margin-top: -50px;
+}
+.nav ul{
+
+	list-style-type: none;
+	list-style-image: none;
+}
+.nav li{
+	font-family: 'Lato', sans-serif; 
+	font-weight: 400; 
+	font-size: 20px;
+	display: inline;
+	padding: 5px 20px 5px 50px;
+}
+.nav a{
+	text-decoration: none;
+	color: black;
+}
+.nav a:hover{
+	color:#85C5E6;
+}
+
+
+
+.sections
+{
+
+	min-height: 800px;
+	height: 800px;
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1920px;
+	position: relative;
+}
+.sections article
+{
+	margin: -10px;
+	position: absolute;	
+	top: 20px;
+	padding: 200px 200px; 
+}
+#home
+{
+	background: url(../Imagenes/arcade.png) 50% 0 no-repeat fixed;
+}
+#about
+{
+	background: url(../Imagenes/nes2.png) 50% 0 no-repeat fixed;
+}
+#crew
+{
+	background: url(../Imagenes/space.png) 50% 0 no-repeat fixed;
+}
+
