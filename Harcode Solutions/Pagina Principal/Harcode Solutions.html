@@ -4,18 +4,44 @@
 <title>Hardcode Solutions</title>
 <!-- CSS Code -->
 <link rel="stylesheet" href="CSS/style.css">
-<link href='http://fonts.googleapis.com/css?family=Lato:400,700,300' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Lato:400,700,300' rel='stylesheet' type='text/css'>	
 <!-- JS Code -->
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 <script src="js/script.js"></script>
+<a href="http://jquery.com/">jQuery</a>
+    <script src="jquery.js"></script>
+    <script>
+    	$( document ).ready(function() {
+
+$(function(){
+    $('.nav li a').click(function(){
+        var divID = $(this).attr('href');
+        $('html,body').animate({
+            scrollTop: $(divID).offset().top 
+        }, {
+            duration: 'slow', 
+            easing: 'swing'
+        }); 
+    }); 
+});
+});
+ 
+    </script>
+</head>
 <body>
-	<div id="titulo" class="font-titulo" style="text-align:center">
-	<h1>Hardcode Solutions</h1>
+	<div id="titulo"  style="text-align:center"  class="font-titulo">
+	Hardcode Solutions
+	<ul class="nav">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#crew">Crew</a></li>
+    </ul>
+
 	</div>
 
 <section id="home" data-type="background" data-speed="10" class="pages">
 	<article>
-		<h2>Vivamus sodales</h2> 
+		<h2 class="h2text">Vivamus sodales</h2> 
       <p class="text">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed venenatis elit ac ultrices viverra. Duis sed purus faucibus, semper felis consequat, imperdiet enim. Praesent malesuada venenatis massa, et tempor eros ultricies ut. Fusce porta non arcu vitae aliquam. Proin ultrices scelerisque elit. Quisque congue nulla id ligula iaculis, rutrum congue augue ultrices. Sed vehicula volutpat varius. Fusce auctor adipiscing dolor vitae pulvinar. Donec vitae urna dolor. Nulla ac augue id urna lobortis gravida id in ligula. Vestibulum in felis quis felis commodo luctus. Nullam nec magna quis libero gravida egestas eget sit amet quam. 
       </p>
@@ -24,7 +50,7 @@
 
 <section id="about" data-type="background" data-speed="10" class = "pages">
 	<article> 
-	<h2>Mauris ornare</h2> 
+	<h2 class="h2text">Mauris ornare</h2> 
     	 <p class="text">
         Sed sed nulla cursus, suscipit magna euismod, malesuada urna. Phasellus faucibus ut erat nec molestie. Praesent tortor nunc, accumsan ac elit ac, faucibus tempor eros. Mauris vitae dolor magna. Vestibulum pulvinar laoreet orci nec dignissim. Ut lacinia nisi tempor arcu pulvinar tristique. Praesent ullamcorper in tellus pellentesque tempor. Aliquam ac vulputate leo, non vehicula diam. Aliquam elementum elit libero, et tristique eros tempus id. 
       	</p>
@@ -33,7 +59,7 @@
 
 <section id="crew" data-type="background" data-speed="10" class = "pages">
 	<article>
-	<h2>Mauris ornare</h2> 
+	<h2 class="h2text">Mauris ornare</h2> 
      	<p class="text">
         Sed sed nulla cursus, suscipit magna euismod, malesuada urna. Phasellus faucibus ut erat nec molestie. Praesent tortor nunc, accumsan ac elit ac, faucibus tempor eros. Mauris vitae dolor magna. Vestibulum pulvinar laoreet orci nec dignissim. Ut lacinia nisi tempor arcu pulvinar tristique. Praesent ullamcorper in tellus pellentesque tempor. Aliquam ac vulputate leo, non vehicula diam. Aliquam elementum elit libero, et tristique eros tempus id. 
       	</p>
