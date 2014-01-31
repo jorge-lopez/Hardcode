@@ -20,6 +20,7 @@
 document.createElement("article");
 document.createElement("section");
 */
+
     var $window = $(window); 
     var velocity = 0.4; 
 
@@ -34,3 +35,18 @@ document.createElement("section");
         }); 
     }; 
     $window.bind('scroll', update);
+
+       	$( document ).ready(function() {
+
+$(function(){
+    $('.nav li a').click(function(){
+        var divID = $(this).attr('href');
+        $('html,body').animate({
+            scrollTop: $(divID).offset().top 
+        }, {
+            duration: 'slow', 
+            easing: 'swing'
+        }); 
+    }); 
+});
+});
