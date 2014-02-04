@@ -2,6 +2,7 @@
 	font-family: 'Lato', sans-serif; 
 	font-weight: 300; 
 	font-size: 70px;
+	overflow: hidden;
 }
 
   .text-title 
@@ -10,12 +11,14 @@
 	font-weight: 400;
 	text-align: center;
 	color: white;
+	overflow: hidden;
 }
   .text 
 {
   	font-family: 'Lato', sans-serif; 
   	font-weight: 300;
   	color: white;
+  	overflow: hidden;
 }
 
 
@@ -62,9 +65,6 @@ ul{
 .nav a:hover{
 	color:#85C5E6;
 }
-
-
-
 .sections
 {
 
@@ -85,20 +85,20 @@ ul{
 #home
 {
 	background: url(../Imagenes/arcade.png) 50% 0 no-repeat fixed;
-	overflow: hidden;
 	background-size: 100%;
-
-
+	overflow: hidden;
 }
 #about
 {
-	background: url(../Imagenes/nes2.png) 100% 0 no-repeat fixed;
+	background: url(../Imagenes/nes2.png) 50% 0 no-repeat fixed;
 	background-size: 100%;
-
+	overflow: hidden;
 }
 #crew
 {
-	background: url(../Imagenes/space.png) 100% 0 no-repeat fixed;
+	background: url(../Imagenes/space.png) 50% 0 no-repeat fixed;
 	background-size: 100%;
+	overflow: hidden;
 }
+
 
