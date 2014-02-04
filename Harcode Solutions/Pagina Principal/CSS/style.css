@@ -3,55 +3,45 @@
 	font-weight: 300; 
 	font-size: 70px;
 }
-#titulo{
-	min-height: 110px;
+
+  .text-title 
+{
+	font-family: 'Lato', sans-serif; 
+	font-weight: 400;
+	text-align: center;
+	color: white;
+}
+  .text 
+{
+  	font-family: 'Lato', sans-serif; 
+  	font-weight: 300;
+  	color: white;
+}
+
+
+#titulo
+{
+	min-height: 115px;
 	top: 0px;
-	height: 110px;
+	height: 115px;
 	margin: 0 auto;
 	width: 100%;
-	max-width: 1920px;
+	left:0;
+	right:0;
 	position: fixed;
 	z-index: 100;
 	background-color: rgb(255,254,253);
+	background-size: 100%;
 	
 }
 body{
 	margin:0;
 	padding:0;
-}
-#home{
-	background: url(../Imagenes/mountain.jpg) 50% 0 no-repeat fixed;
-	min-height: 800px;
-	height: 800px;
-	width: 100%;
-	max-width: 1920px;
-	position: relative;
-	top:50px;
-}
-
-#home article{
-	height: 458px;
-	position: absolute;
-	text-align: center;
-	top: 20px;
-	width: 100%;
-
-}
-.text{
-	font-family: 'Lato', sans-serif; 
-	font-weight: 300; 
-	font-size: 20px;
-}
-
-.h2text{
-	font-family: 'Lato', sans-serif; 
-	font-weight: 400; 
-	font-size: 40px;
+	overflow: scroll;
+;
 }
 ul{
 	margin-top: -50px;
-	margin-left: auto;
-	margin-right: 50px;
 }
 .nav ul{
 
@@ -63,20 +53,21 @@ ul{
 	font-weight: 400; 
 	font-size: 20px;
 	display: inline;
-	padding: -10px 20px 5px 50px;
-	margin-left: 20px;
+	padding: 5px 20px 5px 50px;
 }
 .nav a{
 	text-decoration: none;
-	color:blue;
+	color: black;
 }
 .nav a:hover{
-	color:purple;
+	color:#85C5E6;
 }
 
 
-#about{
-	background: url(../Imagenes/Desert.jpg) 50% 0 no-repeat fixed;
+
+.sections
+{
+
 	min-height: 800px;
 	height: 800px;
 	margin: 0 auto;
@@ -84,29 +75,30 @@ ul{
 	max-width: 1920px;
 	position: relative;
 }
+.sections article
+{
+	margin: -10px;
+	position: absolute;	
+	top: 20px;
+	padding: 200px 200px; 
+}
+#home
+{
+	background: url(../Imagenes/arcade.png) 50% 0 no-repeat fixed;
+	overflow: hidden;
+	background-size: 100%;
 
-#about article{
-	height: 458px;
-	position: absolute;
-	text-align: center;
-	top:20px;
-	width: 100%;
+
+}
+#about
+{
+	background: url(../Imagenes/nes2.png) 100% 0 no-repeat fixed;
+	background-size: 100%;
+
+}
+#crew
+{
+	background: url(../Imagenes/space.png) 100% 0 no-repeat fixed;
+	background-size: 100%;
 }
 
-#crew{
-	background: url(../Imagenes/fondo.jpg) 50% 0 no-repeat fixed;
-	min-height: 800px;
-	height: 800px;
-	margin: 0 auto;
-	width: 100%;
-	max-width: 1920px;
-	position: relative;
-}
-
-#crew article{
-	height: 458px;
-	position: absolute;
-	text-align: center;
-	top:20px;
-	width: 100%;
-}
