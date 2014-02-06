@@ -1,0 +1,165 @@
+
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	margin: 0;
+	min-width: 980px;
+	padding: 0;
+}
+
+p{
+	margin: 0 0 20px 0;	
+}
+
+p, ul{
+	font-family: 'Lato', sans-serif; 
+  	font-weight: 300;
+  	color: white;
+}
+
+img{
+	border: 0;
+}
+
+h1, #pixels{
+	font-family: 'Lato', sans-serif; 
+	font-weight: 400;
+	text-align: center;
+	color: white;
+}
+
+h2{
+	font-family: 'Lato', sans-serif; 
+	font-weight: 400;
+	text-align: center;
+	color: white;
+}
+
+.font-titulo{
+	font-family: 'Lato', sans-serif; 
+	font-weight: 300; 
+	font-size: 70px; 
+}
+#titulo{
+	min-height: 115px;
+	top: 0px;
+	height: 115px;
+	margin: 0 auto;
+	width: 100%;
+	left:0;
+	right:0;
+	position: fixed;
+	z-index: 100;
+	background-color: rgb(255,254,253);
+	background-size: 100%;
+}
+
+#header h1, #pixels{
+	color: #48941A;
+}
+
+.float-left{
+	float: left;	
+	margin: 0 0 0 20px;
+}
+
+.float-right{
+	float: right;
+	margin: 0 20px 0 0;
+}
+
+.center{
+	font-size: 2.5em;
+	padding: 80px 0 0 0;
+	text-align: center;
+}
+
+#nav{
+	list-style: none;
+	position: fixed;
+	right: 20px;
+	top:200px;
+	z-index: 200;
+}
+
+ul{
+	margin-top: -50px;
+}
+.links li{
+	margin: 0 0 15px 0;	
+}
+
+.links ul{
+
+	list-style-type: none;
+	list-style-image: none;
+	
+}
+.links li{
+	font-family: 'Lato', sans-serif; 
+	font-weight: 400; 
+	font-size: 20px;
+	display: inline;
+	padding: 5px 20px 5px 50px;
+}
+.links a{
+	text-decoration: none;
+	color: black;
+}
+.links a:hover{
+	color:#85C5E6;
+}
+
+#header, #home, #second{
+	width: 100%;
+}
+
+#home{
+	background:url(images/arcade.png) 50% 0 no-repeat fixed;
+	color: white;
+	height: 600px;
+	margin: 0 auto;
+	padding: 0;
+}
+
+#about{
+	background: url(images/nes2.png) 50% 0 no-repeat fixed;
+	color: white;
+	height: 1300px;
+	margin: 0 auto;
+	overflow: hidden;
+	padding: 0;
+}
+
+
+/*segundo fondo de section 2*/
+/*#second .bg{
+	background: url(images/space.png) 50% 0 no-repeat fixed;
+	height: 1300px;
+	margin: 0 auto;
+	padding: 0;
+	position: absolute;
+	width: 900px;
+	z-index: 200;
+}*/
+
+#crew{
+	background: url(images/space.png) 50% 0 no-repeat fixed;
+	color: white;
+	height: 650px;
+	padding: 100px 0 0 0;	
+}
+
+.story{
+	margin: 0 auto;
+	min-width: 980px;
+	overflow: auto;
+	width: 980px;
+}
+
+.story .float-left, .story .float-right{
+	padding: 100px 0 0 0;
+	position: relative;
+	width: 350px;	
+}
