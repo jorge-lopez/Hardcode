@@ -121,6 +121,9 @@ ul{
 	height: 600px;
 	margin: 0 auto;
 	padding: 0;
+	background-size: cover;
+
+
 }
 
 #about{
@@ -130,6 +133,7 @@ ul{
 	margin: 0 auto;
 	overflow: hidden;
 	padding: 0;
+	background-size: cover;
 }
 
 
@@ -148,7 +152,8 @@ ul{
 	background: url(images/space.png) 50% 0 no-repeat fixed;
 	color: white;
 	height: 650px;
-	padding: 100px 0 0 0;	
+	padding: 100px 0 0 0;
+	background-size: cover;
 }
 
 .story{
