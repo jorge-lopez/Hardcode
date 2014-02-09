@@ -12,26 +12,81 @@
 <script type="text/javascript" src="scripts/jquery.scrollTo-1.4.2-min.js"></script>
 <script type="text/javascript">
 $(document).ready(function(){
-	$('#nav').localScroll(800);
-	$('.links').localScroll(800);
+	$('#nav').localScroll(500);
+	$('.links').localScroll(500);
 	$('#home').parallax("50%", 0.1);
 	$('#about').parallax("50%", 0.1);
-	//$('.bg').parallax("50%", 0.4);
+	$('.bg').parallax("50%", 0.4);
 	$('#crew').parallax("50%", 0.3);
+});
 
+$(document).ready(function() {
+   $('#jorgeP').hide();
+    $('#jorge').animate({
+       opacity:1 
+});
+
+$(document).ready(function() {
+	$('#ficachiP').hide();
+    $('#ficachi').animate({
+       opacity:1
+
+	});
+
+	$(document).ready(function() {
+	 $('#ivanP').hide();
+    $('#ivan').animate({
+       opacity:1
+
+	});
+$('#jorge').hover(function() {
+    $(this).stop().animate({opacity:.4},500);
+    $('#jorgeP').fadeIn();
+
+}, function() {
+    $(this).stop().animate({opacity:1},500)
+    $('#jorgeP').fadeOut();
+});
+});
+$('#ficachi').hover(function() {
+    $(this).stop().animate({opacity:.4},500);
+    $('#ficachiP').fadeIn();
+
+}, function() {
+    $(this).stop().animate({opacity:1},500)
+    $('#ficachiP').fadeOut();
+});
+});
+$('#ivan').hover(function() {
+    $(this).stop().animate({opacity:.4},500);
+    $('#ivanP').fadeIn();
+
+}, function() {
+    $(this).stop().animate({opacity:1},500)
+    $('#ivanP').fadeOut();
+});
 });
 </script>
 </head>
 
 <body>
-	<div id="titulo" style="text-align:center" class="font-titulo">Hardcode Studios
-	<ul class="links">
+	<div id="titulo" style="text-align:center" class="font-titulo" align="center">Hardcode Studios
+	<ul align="right" id="buttons" class="links">
+	    <li>
+            <a class="social" target="_blank" href="http://www.facebook.com">
+    		<img src="images/fb.ico" width="40" height="40"></a>
+        </li>
+        <li>
+            <a class="social" target="_blank" href="http://www.twitter.com">
+    		<img src="images/twitter.ico" width="42" height="42"></a>
+        </li> 
+	</ul>
+	<ul align="center" id="inside"class="links">
         <li>	
         	<a href="#home">Home</a>
         </li>
         <li>
-        	<a href="#about">About
-        	</a>
+        	<a href="#about">About</a>
         </li>
         <li>
         	<a href="#crew">Crew</a>
@@ -73,29 +128,23 @@ $(document).ready(function(){
 	    
 	</div> <!--#second-->
 	
-	<div id="crew" align="center">
+	<div id="crew" >
 			<!-- <header class="imagehover"> -->
 	    			 <div class="imagen1">
 	    			 	<div>
 	    			 	<img class="crewFoto" id="jorge" src="images/jorge.jpg" alt=""/>
-	    			 	<p id="jorgeP">Programmer</p>
+	    			 	<h2 id="jorgeP">Programmer</h2>
 	    			 	<img class="crewFoto" id="ficachi"src="images/ficachi.jpg" alt=""/>
-	    			 	<p id="ficachiP">Programmer</p>
+	    			 	<h2 id="ficachiP">Programmer</h2>
   						<img class="crewFoto" id="ivan" src="images/ivan.jpg" alt=""/>	
-  						<p id="ivanP">Programmer</p>
+  						<h2 id="ivanP">Programmer</h2>
 	    			 	</div>
   						
 	    			 </div>
-	    			 <!-- <h2 id="JorgeH">Programmer<img id="jorge" class="crewFoto" src="images/jorge.jpg"/><img id="ficachi" class="crewFoto" src="images/ficachi.jpg"/><img id="ivan" class="crewFoto" src="images/ivan.jpg" /></h2> -->	 
-	    			 
-	    			<!--  <h2 id="FicachiH">Programmer<img id="ficachi" class="crewFoto" src="images/ficachi.jpg"/></h2>
-	    			 
-	    			 <h2 id="IvanH">Programmer<img id="ivan" class="crewFoto" src="images/ivan.jpg" /></h2> -->
-	    	<!-- </header> -->
 		<div class="story">
 	    	<div class="float-left">
 	        	<h2>Mauris ornare</h2>
-	            <p>Sed sed nulla cursus, suscipit magna euismod, malesuada urna. Phasellus faucibus ut erat nec molestie. Praesent tortor nunc, accumsan ac elit ac, faucibus tempor eros. Mauris vitae dolor magna. Vestibulum pulvinar laoreet orci nec dignissim. Ut lacinia nisi tempor arcu pulvinar tristique. Praesent ullamcorper in tellus pellentesque tempor. Aliquam ac vulputate leo, non vehicula diam. Aliquam elementum elit libero, et tristique eros tempus id. </p>
+	            <p id="crewP">Sed sed nulla cursus, suscipit magna euismod, malesuada urna. Phasellus faucibus ut erat nec molestie. Praesent tortor nunc, accumsan ac elit ac, faucibus tempor eros. Mauris vitae dolor magna. Vestibulum pulvinar laoreet orci nec dignissim. Ut lacinia nisi tempor arcu pulvinar tristique. Praesent ullamcorper in tellus pellentesque tempor. Aliquam ac vulputate leo, non vehicula diam. Aliquam elementum elit libero, et tristique eros tempus id. </p>
 	        </div>
 	    </div> <!--.story-->
 	</div> <!--#third-->
