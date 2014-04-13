@@ -2,10 +2,14 @@
 @charset "utf-8";
 /* CSS Document */
 
+
+
 body{
 	margin: 0;
 	min-width: auto;
 	padding: 0;
+	font-family: 'Lato', sans-serif; 
+  	font-weight: 300;
 }
 
 p{
@@ -13,8 +17,7 @@ p{
 }
 
 p, ul{
-	font-family: 'Lato', sans-serif; 
-  	font-weight: 300;
+	
   	color: white;
 }
 
@@ -36,37 +39,68 @@ h2{
 	color: white;
 }
 
-.font-titulo{
-	font-family: 'Lato', sans-serif; 
-	font-weight: 300; 
-	font-size: 70px; 
-}
-#titulo{
-	min-height: 90px;
-	top: 0px;
-	height: 95px;
-	margin: 0 auto;
+/*Formato George  de aqui para abajo */
+div#titulo{
+	height: 90px;
 	width: 100%;
-	left:0;
-	right:0;
-	position: fixed;
-	z-index: 100;
-	background-color: rgb(255,254,253);
-	background-size: 100%;
-}
-#titulo2{
-	min-height: 90px;
-	top: 0px;
-	height: 95px;
 	margin: 0 auto;
-	width: 100%;
-	left:0;
-	right:0;
 	position: fixed;
-	z-index: 100;
-	background-color: transparent;
+	font-size: 4em; 
+	text-align: center;
+	background-color: rgba(255,255,255,0.9);
 	background-size: 100%;
+	z-index: 100;
+
+
 }
+	div#titulo > ul{
+		margin-top: 5px;
+		width: 990px;
+		list-style-type: none;
+		list-style-image: none;
+		padding-left: 0px;
+		display: inline-block;
+
+	}
+		div#titulo > ul li{		
+			display: inline;
+			padding: 0px 25px;
+			color: black;
+		}
+			div#titulo > ul li a{
+				font-weight: 300; 
+				font-size: 35px;
+				text-decoration: none;
+				color: black;
+			}
+			div#titulo > ul li a:hover{
+				color:#85C5E6;
+			}
+
+ul#nav{
+	top:50%;
+	right: 2%;
+	line-height: 1.5em;
+	list-style: none;
+	position: fixed;	
+	z-index: 200;
+}
+
+div#home{
+	background:url(images/nes2.png) 50% 0 no-repeat fixed;
+	color: white;
+	height: 1200px;
+	margin: 0 auto;
+	padding: 0;
+	background-size: cover;
+	position: relative;
+}
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
 #header h1, #pixels{
 	color: #48941A;
 }
@@ -87,67 +121,20 @@ h2{
 	text-align: center;
 }
 
-#nav{
-	list-style: none;
-	position: fixed;
-	right: 20px;
-	top:200px;
-	z-index: 200;
-}
+
 
 .social{
 	float:right;
 }
 
-ul{
-	margin-top: -65px;
-}
 
-#inside{
-	margin-top: -165px;
-}
 
-#buttons {
-	margin-top: -55px;
-}
-
-.links li{
-	margin: 0 0 15px 0;	
-}
-
-.links ul{
-
-	list-style-type: none;
-	list-style-image: none;
-	
-}
-.links li{
-	font-family: 'Lato', sans-serif; 
-	font-weight: 400; 
-	font-size: 20px;
-	display: inline;
-	padding: 5px 20px 5px 50px;
-}
-.links a{
-	text-decoration: none;
-	color: black;
-}
-.links a:hover{
-	color:#85C5E6;
-}
 
 #header, #home, #second{
 	width: 100%;
 }
 
-#home{
-	background:url(images/nes2.png) 50% 0 no-repeat fixed;
-	color: white;
-	height: 1200px;
-	margin: 0 auto;
-	padding: 0;
-	background-size: cover;
-}
+
 
 #about{
 	background: url(images/arcade.png) 50% 0 no-repeat fixed;
@@ -158,6 +145,19 @@ ul{
 	padding: 0;
 	background-size: cover;
 }
+.story{
+	margin: 0 auto;
+	min-width: 980px;
+	overflow: auto;
+	width: 980px;
+}
+
+
+
+.story .float-left, .story .float-right{
+	padding: 100px 0 0 0;
+	position: relative;
+	width: 350px;	}
 
 #crew{
 	background: url(images/tetris.png) 50% 0 no-repeat fixed;
@@ -165,6 +165,7 @@ ul{
 	height: 1000px;
 	padding: 100px 0 0 0;
 	background-size: cover;
+	position: relative;
 }
 
 .imagehover{
@@ -220,17 +221,5 @@ ul{
   	color: white;
 }
 
-.story{
-	margin: 0 auto;
-	min-width: 980px;
-	overflow: auto;
-	width: 980px;
-}
 
-
-
-.story .float-left, .story .float-right{
-	padding: 100px 0 0 0;
-	position: relative;
-	width: 350px;	
 
