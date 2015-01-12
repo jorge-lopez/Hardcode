@@ -89,7 +89,7 @@ ul#nav{
 div#home{
 	background:url(images/nes2.png) 50% 0 no-repeat fixed;
 	color: white;
-	height: 1200px;
+	height: 100vh;
 	margin: 0 auto;
 	padding: 0;
 	background-size: cover;
@@ -139,7 +139,7 @@ div#home{
 #about{
 	background: url(images/arcade.png) 50% 0 no-repeat fixed;
 	color: white;
-	height: 1300px;
+	height: 100vh;
 	margin: 0 auto;
 	overflow: hidden;
 	padding: 0;
@@ -162,10 +162,17 @@ div#home{
 #crew{
 	background: url(images/tetris.png) 50% 0 no-repeat fixed;
 	color: white;
+	height: 100vh;
+	padding-top: 100px;
+	margin: 0 auto;
+	overflow: hidden;
+	background-size: cover;
+	
+	/*color: white;
 	height: 1000px;
 	padding: 100px 0 0 0;
 	background-size: cover;
-	position: relative;
+	position: relative;*/
 }
 
 .imagehover{
